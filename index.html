@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ポートフォリオ</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css" />
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="flex">
+    <header class="flex" id="header">
         <h1 class="logo">
             <a href="#profile">
                 <img class="logo-profile" src="images-portfolio/profile-icon.png" alt="プロフアイコン">
@@ -37,218 +41,184 @@
             <li class="nav-list"><a href="#contact">Contact</a></li>
         </ul>
     </div>
-    <div class="box-top flex wrap">
-        <img class="box town" src="images-portfolio/town-img2.jpg" alt="町">
-        <img class="box komugi" src="images-portfolio/komugi-cafe.PNG" alt="こむぎカフェ">
+    <div class="box-top">
+        <img class="box town" src="images-portfolio/ribon-online.jpg" alt="リボンオンライン">
+        <img class="box komugi" src="images-portfolio/komugi-cafe.PNG" alt="VR">
         <img class="box hana" src="images-portfolio/HANA.png" alt="HANA SHOP">
         <img class="box town" src="images-portfolio/cake.png" alt="ケーキ">
+    
+
     </div>
 
     <main>
         <div class="main-title">
             <h2 class="title center">
                 Works
-            </h2>
-            
-            <div class="border">
+            </h2>  
+            <div class="border mx-auto">
                 <div class="circle1 pink"></div>
             </div>
         </div>
-    </main>
+    
         
-    <section class="works flex wrap mx-auto" id="works">
-        <div class="works-box">
-            <img class="item" src="images-portfolio/hoiku1.png" alt="保育園のサイト">
-            <div class="works-title green center">ほしまち保育園</div>
-        </div>
-        <div class="works-box">
-            <img class="item" src="images-portfolio/komugi-cafe.PNG" alt="こむぎカフェ">
-            <div class="works-title pink center">Komugi Cafe</div>
-        </div>
-        <div class="works-box">
-            <img class="item" src="images-portfolio/hiroshima-trip.png" alt="ひろしまTRIP">
-            <div class="works-title green center">ひろしまTRIP</div>
-        </div>
-        <div class="works-box">
-            <img class="item" src="images-portfolio/blog.png" alt="HOMEブログ">
-            <div class="works-title yellow center">HOME blog</div>
-        </div>
-        <div class="works-box">
-            <img class="item" src="images-portfolio/town-img2.jpg" alt="西尾市まちサイト">
-            <div class="works-title green center">西尾市まちサイト</div>
-        </div>
-        <div class="works-box">
-            <img class="item" src="images-portfolio/KAGAMIHARA.jpg" alt="ロケ撮影KAGAMIHARA">
-            <div class="works-title pink center">ロケ撮影 KAGAMIHARA</div>
-        </div>
-        <div class="works-box">
-            <img class="item" src="images-portfolio/cake.png" alt="ケーキ">
-            <div class="works-title pink center">Patisserie K</div>
-        </div>
-        <div class="works-box">
-            <img class="item" src="images-portfolio/ribon-online.jpg" alt="リボンオンライン">
-            <div class="works-title yellow center">Ribon オンライン</div>
-        </div>
-        <div class="works-box">
-            <img class="item" src="images-portfolio/HANA.png" alt="HANASHOP">
-            <div class="works-title green center">HANA SHOP</div>
-        </div>
-    </section>
+        <section class="works flex wrap mx-auto" id="works">
+            <div class="works-box fadeUp">
+                <img class="item" src="images-portfolio/cake.png" alt="ケーキ">
+                <div class="works-title pink center">Patisserie K</div>
+            </div>
+            <div class="works-box">
+                <img class="item" src="images-portfolio/ribon-online.jpg" alt="リボンオンライン">
+                <div class="works-title yellow center">Ribon オンライン</div>
+            </div>
+            <div class="works-box">
+                <img class="item" src="images-portfolio/HANA.png" alt="HANASHOP">
+                <div class="works-title green center flex">HANA SHOP</div>
+            </div>
+        </section>
 
-    <section class="main-title" id="about">
-        <h2 class="title center">
-            About
-        </h2>
-        <div class="border">
-            <div class="circle2 yellow"></div>
-        </div>
-        <h3 class="center">
-            仕事で大切にしていること
-        </h3>
-        <div class="about flex wrap">
-            <div class="about-box pink60">
-                <h4 class="center">ほうれんそう</h4>
-                <p class="about-text">
-                    どなたに対しても、報告・連絡・相談をこまめにするように
-                    心掛けています。前職では、毎朝の朝礼を担当しておりました。
-                    困難な業務のとき、小さなことも周りと声をかけ合うことで、
-                    円滑に業務がしやすくなることを学びました。
-                </p>
-                <img class="deco" src="images-portfolio/1.png" alt="1">
-                <div class="phone-icon center">
-                    <img class="phone" src="images-portfolio/phone.png" alt="電話のイラスト">
-                </div>
+        <section class="main-title" id="about">
+            <h2 class="title center">
+                About
+            </h2>
+            <div class="border mx-auto">
+                <div class="circle2 yellow"></div>
             </div>
-            <div class="about-box yellow60">
-                <h4 class="center">対応力</h4>
-                <p class="about-text">
-                物事に対して、柔軟な対応をすることが出来ます。
-                パートリーダーとして長年勤務し、様々なトラブル対応も担当してまいりました。
-                その経験から、何か問題が起こったときに焦らずに解決策を考えることができるようになりました。
-                </p>
-                <img class="deco" src="images-portfolio/2.png" alt="2">
-            </div>
-        </div>
-
-        <div class="about flex wrap">
-            <div class="about-box yellow60">
-                <h4 class="center">協力的であること</h4>
-                <p class="about-text">
-                    様々な年齢層の方と助け合い、協力し合うことを大切にしています。
-                    今後Web業界で経験を積み、先輩方から沢山学び成長したいです。
-                    そして、御社のお力になれるよう精一杯努めてまいります。
-                </p>
-                <img class="deco" src="images-portfolio/3.png" alt="3">
-                <div class="shakehand center">
-                    <img class="shakehand" src="images-portfolio/shakehando.png" alt="握手のイラスト">
-                </div>
-            </div>
-            <div class="about-box about-team">
-                <img class="team" src="images-portfolio/teamplayer.png" alt="チームプレイヤー">
-                <img class="person" src="images-portfolio/parson.png" alt="人と話すイラスト">
-            </div>
-        </div>
-    </section>
-
-    <section class="skill">
-        <h2 class="title about center">
-            Skill
-        </h2>
-        <div class="border">
-            <div class="circle1 green"></div>
-        </div>
-        <div class="skill-all center mx-auto">
-            <p class="design">
-                デザインを作成する際は、基本の４原則を大事にしています。
-                そして、読み手側にどう感じていただけるかを意識して、
-                リサーチにじっくりと時間をかけるように学んできました。
-            </p>
-            <p class="design">
-                HTMLやCSS作成に関しても、共同作業をすることを前提とし、
-                分かりやすく整理されたものを目指します。
-            </p>
-        </div>
-        <!-- skillの本のイメージ -->
-        <div class="skill-area flex wrap mx-auto">
-            <div class="skill-1 flex yellow mx-auto">
-                <ul class="skill-text left">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Java Sprict</li>
-                </ul>
-            </div>
-            <div class="skill-2 flex pink mx-auto">
-                <p class="skill-text center">
-                    Figma
-                </p>    
-            </div>
-            <div class="skill-3 flex green mx-auto">
-                <p class="skill-text center">
-                    Visual Studio Code
-                </p>    
-            </div>    
-        </div>
-    </section>
-
-    <section class="profile" id="profile">
-        <h2 class="title about center">
-            Profile
-        </h2>
-        <div class="border">
-            <div class="circle2 green"></div>
-        </div>
-        <div class="prof-box flex wrap mx-auto">
-            <div class="prof center">
-                <img class="prof-img" src="images-portfolio/prof-img.png" alt="プロフィール写真">
-            </div>
-            <div class="prof-specialty pink60">
-                <h4 class="spe-title left">いとう かおり</h4>
-                <p class="prof-text">
-                    名古屋文理大学短大部卒。<br>
-                    栄養士として勤務後、<br>
-                    職業訓練校でWebデザインとプログラミングを学びました。<br>
-                    新しいことを学んだり情報収集することが好きです。<br>
-                    2児の母として子育てしながら、Webの勉強中。<br>
-                    最近は、学生の頃に苦手だった英語にもチャレンジしています。
-                </p>
-                <img class="pro-icon" src="images-portfolio/profile-icon.png" alt="プロフアイコン">
-            </div>
-        </div>
-        <div class="prof-box flex wrap mx-auto">
-            <div class="prof-specialty pink60">
-                <h4 class="spe-title left">得意なジャンル</h4>
-                <div class="under flex wrap">
-                    <ul class="under-ul">
-                        <li>ネットショッピング</li>
-                        <li>料理・レシピ考案</li>
-                        <li>子育てに関すること</li>
-                        <li>ヘアケア・コスメ</li>
-                        <li>公園めぐり</li>
-                        <li>家電</li>
-                    </ul>
-                    <p class="mac white">
-                        使用PC<br>
-                        MacBookAir
+            <h3 class="center fadeUp">
+                仕事で大切にしていること
+            </h3>
+            <div class="about flex wrap">
+                <div class="about-box pink60">
+                    <h4 class="center">ほうれんそう</h4>
+                    <p class="about-text">
+                        どなたに対しても、報告・連絡・相談をこまめにするように
+                        心掛けています。前職では、毎朝の朝礼を担当しておりました。
+                        困難な業務のとき、小さなことも周りと声をかけ合うことで、
+                        円滑に業務がしやすくなることを学びました。
                     </p>
-                    <img class="spe-icon" src="images-portfolio/specialty-icon.png" alt="スペシャリティアイコン">
+                    <img class="deco" src="images-portfolio/1.png" alt="1">
+                    <div class="phone-icon center">
+                        <img class="phone" src="images-portfolio/phone.png" alt="電話のイラスト">
+                    </div>
+                </div>
+                <div class="about-box yellow60">
+                    <h4 class="center">対応力</h4>
+                    <p class="about-text">
+                    物事に対して、柔軟な対応をすることが出来ます。
+                    パートリーダーとして長年勤務し、様々なトラブル対応も担当してまいりました。
+                    その経験から、何か問題が起こったときに焦らずに解決策を考えることができるようになりました。
+                    </p>
+                    <img class="deco" src="images-portfolio/2.png" alt="2">
+                    <div class="love-icon center">
+                        <img class="love" src="images-portfolio/pink-heart.svg" alt="love">
+                    </div>
                 </div>
             </div>
-            <div class="pc center">
-                <img class="pc-img" src="images-portfolio/macbook.png" alt="PC">
+
+            <div class="about flex wrap mx-auto">
+                <div class="about-box yellow60">
+                    <h4 class="center">協力的であること</h4>
+                    <p class="about-text">
+                        様々な年齢層の方と助け合い、協力し合うことを大切にしています。
+                        今後Web業界で経験を積み、先輩方から学び成長したいです。
+                        そして、御社のお力になれるよう精一杯努めてまいります。
+                    </p>
+                    <img class="deco" src="images-portfolio/3.png" alt="3">
+                    <div class="hand center">
+                        <img class="shakehand" src="images-portfolio/shakehando.png" alt="握手のイラスト">
+                    </div>
+                </div>
+                <div class="about-box about-team">
+                    <img class="team" src="images-portfolio/teamplayer.png" alt="チームプレイヤー">
+                    <img class="person" src="images-portfolio/parson.png" alt="人と話すイラスト">
+                </div>
             </div>
-        </div>  
-    </section>
+        </section>
+
+        <section class="skill">
+            <h2 class="title about center">
+                Skill
+            </h2>
+            <div class="border mx-auto">
+                <div class="circle1 green"></div>
+            </div>
+            <div class="skill-all center mx-auto">
+                <p class="design mx-auto">
+                    デザインを作成する際は、基本の４原則を大事にしています。
+                    そして、読み手側にどう感じていただけるかを意識して、
+                    リサーチにじっくりと時間をかけるように学んできました。
+                </p>
+                <p class="design mx-auto">
+                    HTMLやCSS作成に関しても、共同作業をすることを前提とし、
+                    分かりやすく整理されたものを目指します。
+                </p>
+            </div>
+            <!-- skillの本のイメージ -->
+            <div class="skill-area flex wrap mx-auto">
+                <div class="skill-1 flex yellow mx-auto">
+                    <ul class="skill-text left">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Java Script</li>
+                    </ul>
+                </div>
+                <div class="skill-2 flex pink mx-auto">
+                    <p class="skill-text center">
+                        Figma
+                    </p>    
+                </div>
+                <div class="skill-3 flex green mx-auto">
+                    <p class="skill-text center">
+                        Visual Studio Code
+                    </p>    
+                </div>    
+            </div>
+        </section>
+    
+
+        <section class="profile" id="profile">
+            <h2 class="title about center">
+                Profile
+            </h2>
+            <div class="border mx-auto">
+                <div class="circle2 green"></div>
+            </div>
+
+            <div class="prof-box flex wrap mx-auto">
+                <div class="prof center">
+                    <img class="prof-img" src="images-portfolio/prof-img.png" alt="プロフィール写真">
+                </div>
+
+                <div class="prof-specialty pink60">
+                    <h5 class="spe-title1 left">
+                        はじめまして、いとうです。
+                    </h5>
+                    <p class="prof-text">
+                        栄養士として勤務後、<br>
+                        職業訓練校でWebデザインとプログラミングを学びました。<br>
+                        2児の母として子育てしながら、Webの勉強中です。<br>
+                    </p>
+                    <h5 class="spe-title2 left">
+                        得意なこと
+                    </h5>
+                    <p class="prof-text">
+                        料理・レシピ考案/ネットショッピング/
+                        公園めぐり
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <section class="contact" id="contact">
-        <h2 class="title about center">
-            Contact
-        </h2>
-        <div class="border">
-            <div class="circle1 yellow"></div>
-        </div> 
-        <h3 class="center">
-            お気軽にお問い合わせ下さい！
-        </h3>
+            <h2 class="title about center">
+                Contact
+            </h2>
+            <div class="border mx-auto">
+                <div class="circle1 yellow"></div>
+            </div> 
+            <p class="center">
+                こちらのフォームよりお願いいたします✉
+            </h3>
     </section>
 
     <form class="mx-auto">
@@ -272,20 +242,32 @@
                 <input type="tel" placeholder="0001234000">
             </div>
             <div class="form-detail flex">
-                <label>お問い合わせ<br>内容</label>
+                <label>お問い合わせ内容</label>
                 <textarea placeholder="こちらに詳細を入力してください。"></textarea>
             </div>
             <p class="note">
-                お問い合わせのご返信は2日以内を心掛けております。ご利用環境により、
-                お返事が届かない場合があります。5日経過しても返信のない場合、
+                お問い合わせのご返信は2日以内を心掛けております。
+                5日経過しても返信のない場合、
                 恐れ入りますが再度お問い合わせいただくようにお願い申し上げます。
             </p>
-            <button type="submit">この内容で送信する</button>
+            <button class="submit" type="submit">この内容で送信する</button>
+            <div class="send"></div>
         </div>
     </form>
 
+
     <footer>
-        <p>&copy;2026 ITO KAORI</p>
+        <p class="copy center">&copy;2026 ITO</p>
     </footer>
+    <script src="jquery-2.1.3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+	<script src="main.js"></script>
 </body>
 </html>
