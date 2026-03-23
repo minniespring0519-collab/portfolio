@@ -21,7 +21,6 @@ $(function() {
         });
         });
 
-
     // スクロールで浮き出るように
     let winH = $(window).height();
     let objTop = $('.about').offset().top;
@@ -36,21 +35,21 @@ $(function() {
     });
 
     // 写真スライド
-    for(i=0;i<4;i++)
+    for(i=0;i<5;i++)
     {
         $('.box').eq(i).css({left:260*i});
     }
     setInterval(function(){
-        for(i=0;i<4;i++)
+        for(i=0;i<5;i++)
         {
             var position = $('.box').eq(i).position();
             var left = position.left - 1;
             $('.box').eq(i).css({left:left});
             if(left <= -250)
             {
-                $('.box').eq(i).css({left:800});
+                $('.box').eq(i).css({left:1050});
             }
         }
-    },30);
+    },40);
     });
 });
