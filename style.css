@@ -5,7 +5,7 @@ body {
     color: #282828;
     line-height: 2.3em;
     letter-spacing: 0.15em;
-}
+    }
     /* 位置調整 */
     .flex {
         display: flex;
@@ -50,26 +50,13 @@ body {
         margin-top: 50px;
         justify-content: space-between;
     }
-    /* 600以下 */
-    @media (max-width: 600px) {
-        header {
-            justify-content: center;
-            margin-left: auto;
-            margin-right: auto;
-            }
-    }
+    
 
     main {
         margin-left: 80px;
         margin-right: 80px;
     }
-    /* 600以下で外余白調整 */
-    @media (max-width:600px) {
-        main {
-            margin-left: 30px;
-            margin-right: 30px;
-        }
-    }
+    
 
     .nav {
         position: fixed;
@@ -82,12 +69,6 @@ body {
         background-color: rgba(255,255,255,0.6);
         padding: 0 15px 5px 0;
     }
-    /* 600以下消える */
-    @media (max-width: 600px) {
-        .nav {
-            display: none;
-            }
-    }
     
     .nav-sub {
     width: 100%;
@@ -95,26 +76,11 @@ body {
     box-sizing: border-box;
     background-color: rgba(255,255,255,0.6)
     }
-    /*  601以上消える*/
-    @media (min-width: 601px) {
-        .nav-sub {
-            display: none;
-            }
-    }
-    /* 600以下固定 */
-    @media (max-width: 600px) {
-        .nav-sub {
-            position: sticky;
-            width: 100%;
-            top: 0;
-            z-index: 100;
-            }
-    }
+    
 
     .nav-sub-ul {
         gap: 20px;
         letter-spacing: 0.1em;
-        padding-left: 0;
         margin: 0;
         justify-content: center;
     }
@@ -152,11 +118,7 @@ body {
         border: 2px solid #282828;
         height: 235px;
     }
-    @media (max-width: 600px) {
-        .logo {
-            max-width: 100%;
-        }
-    }
+    
     .logo-text {
         position: absolute;
         font-size: 26px;
@@ -193,20 +155,6 @@ body {
         width: 250px;
         height: 250px; 
         }
-    
-        
-    /* 1カラムになる */
-    @media (max-width: 600px) {
-        .box-top {
-            flex: 0 0 0 100%;
-            max-width: 100%;
-            }
-            .works-box {
-            max-width: 100%;
-            margin-bottom: 50px;
-            }
-    }
-    
     /* 角丸 */
     .box,
     img.item,
@@ -282,17 +230,6 @@ body {
         left: 0;
         bottom: 0;
         border-radius: 0 0 20px 20px;
-    }
-
-    @media (max-width: 600px) {
-        .works-title {
-            font-size:12px;
-            background-color: none;
-            }
-            .works {
-                max-width: 100%;
-                gap: 15px;
-                }   
     }
 
     /* about */
@@ -397,44 +334,6 @@ body {
         width: 180px;
         height: 180px;  
     }
-
-    /* 1000以下で本背景消える */
-    @media (max-width:1000px) {
-        .skill-area {
-            background-image: none; 
-        }
-    }
-    /* 1000以下skill同じサイズで並ぶ */
-    @media (max-width:1000px) {
-        .skill-1,
-        .skill-2,
-        .skill-3{
-            position: static;
-            width: 160px;
-            height: 160px;
-            margin-top: 15px 0;
-        }
-    }
-    @media (max-width: 600px) {
-        .skill-area {
-            max-width: 100%;
-            display: flex;
-            align-items: center;
-        }
-    }
-        /* 600以下 */
-    @media (max-width: 600px) {
-        .skill-area {
-        max-width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 40px;
-        aspect-ratio: auto;
-        height: auto;
-        }
-    }
-
     img.book {
         width: 650px;
         height: 500px;
@@ -469,10 +368,11 @@ body {
         right: 35px;  
     }
 
+    /* ここからメディアクエリ */
      /* 600以下で */
     @media (max-width:600px) {
         .prof-specialty {
-            width: 100%;
+            width: 80%;
             display: flex;
             flex-wrap:wrap ;
         }
@@ -487,6 +387,9 @@ body {
         }
         .prof-text {
             width: 100%;
+        }
+        .prof-img {
+            width: 90%;
         }
     }
     .pc {
@@ -581,26 +484,110 @@ body {
         margin-right: 50px;
         text-align: center;
     }
-    /* 600以下で改行なし */
-    @media (max-width:600px) {
-        br {
+
+
+    
+    /* スマホ版・600以下 */
+    @media (max-width: 600px) {
+        header {
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            }
+    
+    /* 余白調整 */
+        main {
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+    /* 消える */
+        .nav {
             display: none;
+            }
+    /* 固定する */
+        .nav-sub {
+            position: sticky;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+            }
+        .nav-sub-ul {
+            width: 80%;
+            gap: 10px;   
+            }
+        .box-top {
+            flex: 0 0 0 100%;
+            max-width: 100%;
+            }
+        .works-box {
+            max-width: 100%;
+            margin-bottom: 50px;
+            }
+        .works-title {
+            font-size:12px;
+            background-color: none;
+            }
+            .works {
+                max-width: 100%;
+                gap: 15px;
+                }
+            br {
+            display: none;
+        }
+        }
+        label {
+            width: 100%;
+            margin-bottom: 5px;
+        }
+        input,
+        textarea {
+            width: 100%;
+        }
+        form {
+            width: 70%;
+            padding: 20px;
+        }  
+    
+
+        /*  601以上はnone*/
+    @media (min-width: 601px) {
+        .nav-sub {
+            display: none;
+            }
+    }
+    @media (max-width: 600px) {
+        .logo {
+            max-width: 100%;
         }
     }
     
-    @media (max-width:600px) {
-    label {
-        width: 100%;
-        margin-bottom: 5px;
-    }
-    input,
-    textarea {
-        width: 100%;
-    }
-    form {
-        width: 90%;
-        padding: 20px;
-    }
-    }
+    /* 1000以下で本背景消える */
 
+    @media (max-width:1000px) {
+        .skill-area {
+            background-image: none; 
+        }
+         /* skill同じサイズで並ぶ */
+        .skill-1,
+        .skill-2,
+        .skill-3{
+            position: static;
+            width: 160px;
+            height: 160px;
+            margin-top: 15px 0;
+        }
+    }    
+        /* 600以下 */
+    @media (max-width: 600px) {
+        .skill-area {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+        aspect-ratio: auto;
+        height: auto;
+        }
+    } 
+    
 
